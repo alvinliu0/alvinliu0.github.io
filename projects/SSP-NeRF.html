@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Semantic-Aware Implicit Neural Audio-Driven Video Portrait Generation</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="Animating high-fidelity video portrait with speech audio is crucial for virtual reality and digital entertainment. 
+While most previous studies rely on accurate explicit structural information, recent works explore the implicit scene representation of Neural Radiance Fields (NeRF) for realistic generation. 
+In order to capture the inconsistent motions as well as the semantic difference between human head and torso, some work models them via two individual sets of NeRF, leading to unnatural results. 
+In this work, we propose Semantic-aware Speaking Portrait NeRF (SSP-NeRF), which creates delicate audio-driven portraits using one unified set of NeRF. 
+The proposed model can handle the detailed local facial semantics and the global head-torso relationship through two semantic-aware modules. 
+Specifically, we first propose a Semantic-Aware Dynamic Ray Sampling module with an additional parsing branch that facilitates audio-driven volume rendering. 
+Moreover, to enable portrait rendering in one unified neural radiance field, a Torso Deformation module is designed to stabilize the large-scale non-rigid torso motions. 
+Extensive evaluations demonstrate that our proposed approach renders more realistic video portraits compared to previous methods.">
+<meta name="keywords" content="Talking Face Generation; Audio-Visual Representation Learning; Deep learning;">
+<link rel="author" href="https://hangz-nju-cuhk.github.io/">
+
+<!-- Fonts and stuff -->
+<link href="./PC-AVS/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./Sep-Stereo/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./Sep-Stereo/iconize.css">
+<script async="" src="./Sep-Stereo/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+
+      <div class="section head">
+	<h1>Semantic-Aware Implicit Neural Audio-Driven Video Portrait Generation</h1>
+
+	<div class="authors">
+      Xian Liu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  Yinghao Xu<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  Qianyi Wu</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Hang Zhou</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  Wayne Wu</a><sup>3</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  Bolei Zhou</a><sup>1</sup>
+	</div>
+
+	<div class="affiliations">
+
+  1. <a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory, </a> <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  2. <a href="https://www.monash.edu/">Monash University</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  3. <a href="https://www.sensetime.com/en">SenseTime Research </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
+  </div>
+
+	<div class="venue">arXiv preprint arXiv:xxx </div>
+      </div>
+
+      <center><img src="./SSP-NeRF/SSP-NeRF.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+		Animating high-fidelity video portrait with speech audio is crucial for virtual reality and digital entertainment. 
+		While most previous studies rely on accurate explicit structural information, recent works explore the implicit scene representation of Neural Radiance Fields (NeRF) for realistic generation. 
+		In order to capture the inconsistent motions as well as the semantic difference between human head and torso, some work models them via two individual sets of NeRF, leading to unnatural results. 
+		In this work, we propose Semantic-aware Speaking Portrait NeRF (SSP-NeRF), which creates delicate audio-driven portraits using one unified set of NeRF. 
+		The proposed model can handle the detailed local facial semantics and the global head-torso relationship through two semantic-aware modules. 
+		Specifically, we first propose a Semantic-Aware Dynamic Ray Sampling module with an additional parsing branch that facilitates audio-driven volume rendering. 
+		Moreover, to enable portrait rendering in one unified neural radiance field, a Torso Deformation module is designed to stabilize the large-scale non-rigid torso motions. 
+		Extensive evaluations demonstrate that our proposed approach renders more realistic video portraits compared to previous methods.
+	</p>
+      </div>
+
+<div class="section demo">
+	<h2>Demo Video</h2>
+	<br>
+	<center>
+	  <iframe width="640" height="360" src="https://www.youtube.com/embed/lNQQHIggnUg" frameborder="0" allowfullscreen></iframe>
+	</video>
+	    </center>
+	    </div>
+
+<br>
+
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://arxiv.org/abs/xxx" target="_blank" class="imageLink"><img src="./SSP-NeRF/paper.png"></a><br>
+		  <a href="https://arxiv.org/abs/xxx" target="_blank">Paper</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+
+<br>
+
+<div class="section code">
+	<h2>Code</h2>
+	<center>
+	  <ul>
+
+          <li class="grid">
+	      <div class="griditem">
+		<img src="./SSP-NeRF/code.png"></a><br>
+		  Code [Coming Soon]</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+
+<br>
+
+
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>
+@inproceedings{liu2022semantic,
+  title = {Semantic-Aware Implicit Neural Audio-Driven Video Portrait Generation},
+  author = {Liu, Xian and Xu, Yinghao and Wu, Qianyi and Zhou, Hang and Wu, Wayne and Zhou, Bolei},
+  journal={arXiv preprint arXiv:xxx},
+  year = {2022}
+}</pre>
+<br>
+
+	  </div>
+      </div>
+
+</body></html>
