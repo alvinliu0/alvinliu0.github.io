@@ -1,0 +1,84 @@
+
+                a {
+                    color: #1772d0;
+                    text-decoration: none;
+                  }
+  
+  
+                  a:focus,
+                  a:hover {
+                    color: #f09228;
+                    text-decoration: none;
+                  }
+  
+                  body,
+                  td,
+                  th,
+                  tr,
+                  p,
+                  a {
+                    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+                    font-size: 15px
+                  }
+  
+                  strong {
+                    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+                    font-size: 15px;
+                  }
+                  heading {
+                    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+                    font-size: 23px;
+                  }
+  
+                  papertitle {
+                    color: #000000
+                    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+                    font-size: 18px;
+                  }
+  
+                  author {
+                    color: #000000
+                    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+                    font-size: 15px;
+                  }
+  
+                  name {
+                    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+                    font-size: 33px;
+                  }
+  
+                  .one {
+                    width: 160px;
+                    height: 160px;
+                    position: relative;
+                  }
+  
+                  .two {
+                    width: 160px;
+                    height: 160px;
+                    position: absolute;
+                    transition: opacity .2s ease-in-out;
+                    -moz-transition: opacity .2s ease-in-out;
+                    -webkit-transition: opacity .2s ease-in-out;
+                  }
+  
+                  .fade {
+                    transition: opacity .2s ease-in-out;
+                    -moz-transition: opacity .2s ease-in-out;
+                    -webkit-transition: opacity .2s ease-in-out;
+                  }
+  
+                  span.highlight {
+                    background-color: #ffffd0;
+                  }
+  
+  
+  div.title{color:#000000;font-size:18px}
+  span.venue{color:#1772d0;font-size:15px}
+  span.tag{color:#1772d0;font-size: 15px}
+  
+  div.authors a:link,
+  div.authors a:visited{color:#777777;text-decoration:None}
+  div.authors a:hover{color:#f09228;text-decoration:None}
+  div.authors{font-size:100%;color:#777777;}
+  span.yh{color:#000000;font-size: 15px}
