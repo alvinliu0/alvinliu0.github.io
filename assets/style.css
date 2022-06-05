@@ -43,6 +43,11 @@ div.title {
   font-weight: 600;
   margin-bottom: 5px;
 }
+div.conf {
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 5px;
+}
 div.author {
   font-size: 15px;
   color: #777777;
