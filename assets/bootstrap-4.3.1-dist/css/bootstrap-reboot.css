@@ -101,6 +101,9 @@ b,
 strong {
   font-weight: bolder;
 }
+strongless {
+  font-weight: bolder;
+}
 
 small {
   font-size: 80%;

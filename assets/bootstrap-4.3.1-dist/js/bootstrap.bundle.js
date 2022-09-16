@@ -5226,6 +5226,7 @@
     sub: [],
     sup: [],
     strong: [],
+    strongless: [],
     u: [],
     ul: []
     /**
