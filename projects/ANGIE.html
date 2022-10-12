@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- === Header Starts === -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Audio-Driven Co-Speech Gesture Video Generation</title>
+
+  <link href="./common/bootstrap.min.css" rel="stylesheet">
+  <link href="./common/font.css" rel="stylesheet" type="text/css">
+  <link href="./common/style.css" rel="stylesheet" type="text/css">
+</head>
+<!-- === Header Ends === -->
+
+
+<body>
+
+
+<!-- === Home Section Starts === -->
+<div class="section">
+  <!-- === Title Starts === -->
+  <div class="header">
+    <div class="logo">
+      <a href="https://mmlab.ie.cuhk.edu.hk/" target="_blank"><img src="./common/cuhk.jfif"></a>
+    </div>
+    <div class="title", style="font-size: 20pt; padding-top: 10pt;">  <!-- Set padding as 10 if title is with two lines. -->
+		Audio-Driven Co-Speech Gesture Video Generation
+    </div>
+  </div>
+  <!-- === Title Ends === -->
+  <div class="author">
+    <a href="https://alvinliu0.github.io/" target="_blank">Xian Liu</a><sup>1</sup>,&nbsp;
+    <a href="https://wuqianyi.top/" target="_blank">Qianyi Wu</a><sup>2</sup>,&nbsp;
+    <a href="https://hangz-nju-cuhk.github.io/" target="_blank">Hang Zhou</a><sup>1</sup>,&nbsp;
+	<a href="https://yuanqidu.github.io/" target="_blank">Yuanqi Du</a><sup>3</sup>,&nbsp;
+	<a href="https://wywu.github.io/" target="_blank">Wayne Wu</a><sup>4</sup>,&nbsp;
+	<a href="http://dahua.site/" target="_blank">Dahua Lin</a><sup>1, 4</sup>,&nbsp;
+	<a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a><sup>5</sup>
+  </div>
+  <div class="institution">
+    <sup>1</sup>Multimedia Laboratory, The Chinese University of Hong Kong&nbsp;&nbsp;&nbsp;
+	<sup>2</sup>Monash University
+	<br>
+	<sup>3</sup>Cornell University&nbsp;&nbsp;&nbsp;
+	<sup>4</sup>Shanghai AI Laboratory&nbsp;&nbsp;&nbsp;
+	<sup>5</sup>S-Lab, Nanyang Technological University
+  </div>
+  <div class="link">
+    <a href="./ANGIE/NeurIPS2022_ANGIE_CameraReady.pdf" target="_blank">[Paper]</a>&nbsp;
+    <a href="#" target="_blank">[Code (Coming Soon)]</a>
+  </div>
+  <div class="teaser">
+    <img src="./ANGIE/pipeline.png">
+  </div>
+</div>
+<!-- === Home Section Ends === -->
+
+
+<!-- === Overview Section Starts === -->
+<div class="section">
+  <div class="title">Overview</div>
+  <div class="body">
+    This paper formally defines and studys the challenging problem of audio-driven co-speech gesture video generation in image domain. 
+	Our key insight is that the co-speech gestures can be decomposed into common motion patterns and subtle rhythmic dynamics. 
+	To this end, we propose a novel framework, ANGIE, to effectively capture the reusable co-speech gesture patterns as well as fine-grained rhythmic movements. 
+	To achieve high-fidelity image sequence generation, we leverage an unsupervised motion representation instead of a structural human body prior (e.g., 2D skeletons). 
+	Specifically, 1) we propose a vector quantized motion extractor (VQ-Motion Extractor) to summarize common co-speech gesture patterns from implicit motion representation to codebooks. 
+	2) Moreover, a co-speech gesture GPT with motion refinement (Co-Speech GPT) is devised to complement the subtle prosodic motion details. Extensive experiments demonstrate that our framework renders realistic and vivid co-speech gesture video.
+  </div>
+</div>
+<!-- === Overview Section Ends === -->
+
+
+<!-- === Result Section Starts === -->
+<div class="section">
+  <div class="title">Results</div>
+  <div class="body">
+    Problem setting illustration. Given an image with speech audio, we generate aligned speaker image sequence.
+
+    <!-- Adjust the number of rows and columns (EVERY project differs). -->
+    <table width="100%" style="margin: 20pt 0; text-align: center;">
+      <tr>
+        <td><img src="./ANGIE/problem_setting.png" width="90%"></td>
+      </tr>
+    </table>
+
+    Qualitative image sequence results on the PATS Image dataset.
+
+    <!-- Adjust the frame size based on the demo (EVERY project differs). -->
+    <table width="100%" style="margin: 20pt 0; text-align: center;">
+		<tr>
+		  <td><img src="./ANGIE/qualitative_result.png" width="90%"></td>
+		</tr>
+	  </table>
+
+	We validate that the codebooks contain meaningful motion patterns. Drive the same image with different VQ codes leads to different
+	gestures (left); Drive different images with the same VQ code shows same motions (right).
+
+	<!-- Adjust the frame size based on the demo (EVERY project differs). -->
+	<table width="100%" style="margin: 20pt 0; text-align: center;">
+		<tr>
+		<td><img src="./ANGIE/codebook.png" width="90%"></td>
+		</tr>
+	</table>
+  </div>
+</div>
+<!-- === Result Section Ends === -->
+
+<!-- <div class="section">
+	<div class="title">Results</div>
+	<div class="body">
+  
+	  Demo video here.
+  
+	  <!-- Adjust the frame size based on the demo (EVERY project differs). -->
+	  <!-- <div style="position: relative; padding-top: 50%; margin: 20pt 0; text-align: center;">
+		<iframe src="https://via.placeholder.com/900x450" frameborder=0
+				style="position: absolute; top: 2.5%; left: 2.5%; width: 95%; height: 100%;"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+	  </div>
+	</div>
+  </div> --> -->
+
+<!-- === Reference Section Starts === -->
+<div class="section">
+  <div class="bibtex">BibTeX</div>
+<pre>
+@article{liu2022audio,
+    title={Audio-Driven Co-Speech Gesture Video Generation},
+    author={Liu, Xian and Wu, Qianyi and Zhou, Hang and Du, Yuanqi and Wu, Wayne and Lin, Dahua and Liu, Ziwei},
+    journal={Advances in Neural Information Processing Systems},
+    year={2022}
+}
+</pre>
+
+  <!-- BZ: we should give other related work enough credits, -->
+  <!--     so please include some most relevant work and leave some comment to summarize work and the difference. -->
+  <div class="ref">Related Work</div>
+  <div class="citation">
+    <div class="image" style="padding-top: 10pt;"><img src="./ANGIE/s2g.png"></div>
+    <div class="comment">
+      <a href="https://arxiv.org/abs/1906.04160" target="_blank">
+        Shiry Ginosar et al. Learning Individual Styles of Conversational Gesture.
+        CVPR, 2019.</a><br>
+      <b>Comment:</b>
+      The first work that utilizes deep learning framework with an adversarial training scheme (GAN) for the task of co-speech gesture generation.
+    </div>
+  </div>
+  <div class="citation">
+    <div class="image"><img src="./ANGIE/trimodal.jpg"></div>
+    <div class="comment">
+      <a href="https://arxiv.org/abs/2009.02119" target="_blank">
+        Youngwoo Yoon et al. Speech Gesture Generation from the Trimodal Context of Text, Audio, and Speaker Identity. SIGGRAPH Asia, 2020.</a><br>
+      <b>Comment:</b>
+      Consider three input modalities as stimuli for co-speech gesture generation.
+    </div>
+  </div>
+  <div class="citation">
+    <div class="image" style="padding-top: 15pt;"><img src="./ANGIE/HA2G.png"></div>
+    <div class="comment">
+      <a href="https://arxiv.org/abs/2203.13161" target="_blank">
+        Xian Liu et al. Learning Hierarchical Cross-Modal Association for Co-Speech Gesture Generation. CVPR, 2022.</a><br>
+      <b>Comment:</b>
+      Excavate the hierarchical cross-modal associations of multiple granularities between multi-level audio features and human skeletons.
+    </div>
+  </div>
+</div>
+<!-- === Reference Section Ends === -->
+
+
+</body>
+</html>
